@@ -1,0 +1,506 @@
+:root {
+  --font-fancy: "Retro New Version", system-ui, -apple-system,
+    BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica,
+    Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, avenir next, avenir,
+    segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --color-primary: #f6ad55;
+  --color-bg: #141821;
+  --color-fg: #79838c;
+  --color-white: #fff;
+  --color-blue-c64: #003aff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  background-color: var(--color-blue-c64);
+  color: var(--color-fg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 16px;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.content {
+  background-color: var(--color-white);
+  padding: 2em;
+  flex-grow: 1;
+  display: flex;
+  flex: auto;
+  overflow-y: auto;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ffb8b8;
+  }
+
+  1% {
+    color: #ffbcb8;
+  }
+
+  2% {
+    color: #ffc0b8;
+  }
+
+  3% {
+    color: #ffc4b8;
+  }
+
+  4% {
+    color: #ffc9b8;
+  }
+
+  5% {
+    color: #ffcdb8;
+  }
+
+  6% {
+    color: #ffd1b8;
+  }
+
+  7% {
+    color: #ffd6b8;
+  }
+
+  8% {
+    color: #ffdab8;
+  }
+
+  9% {
+    color: #ffdeb8;
+  }
+
+  10% {
+    color: #ffe2b8;
+  }
+
+  11% {
+    color: #ffe7b8;
+  }
+
+  12% {
+    color: #ffebb8;
+  }
+
+  13% {
+    color: #ffefb8;
+  }
+
+  14% {
+    color: #fff4b8;
+  }
+
+  15% {
+    color: #fff8b8;
+  }
+
+  16% {
+    color: #fffcb8;
+  }
+
+  17% {
+    color: #feffb8;
+  }
+
+  18% {
+    color: #f9ffb8;
+  }
+
+  19% {
+    color: #f5ffb8;
+  }
+
+  20% {
+    color: #f1ffb8;
+  }
+
+  21% {
+    color: #ecffb8;
+  }
+
+  22% {
+    color: #e8ffb8;
+  }
+
+  23% {
+    color: #e4ffb8;
+  }
+
+  24% {
+    color: #e0ffb8;
+  }
+
+  25% {
+    color: #dbffb8;
+  }
+
+  26% {
+    color: #d7ffb8;
+  }
+
+  27% {
+    color: #d3ffb8;
+  }
+
+  28% {
+    color: #ceffb8;
+  }
+
+  29% {
+    color: #caffb8;
+  }
+
+  30% {
+    color: #c6ffb8;
+  }
+
+  31% {
+    color: #c2ffb8;
+  }
+
+  32% {
+    color: #bdffb8;
+  }
+
+  33% {
+    color: #b9ffb8;
+  }
+
+  34% {
+    color: #b8ffba;
+  }
+
+  35% {
+    color: #b8ffbf;
+  }
+
+  36% {
+    color: #b8ffc3;
+  }
+
+  37% {
+    color: #b8ffc7;
+  }
+
+  38% {
+    color: #b8ffcc;
+  }
+
+  39% {
+    color: #b8ffd0;
+  }
+
+  40% {
+    color: #b8ffd4;
+  }
+
+  41% {
+    color: #b8ffd8;
+  }
+
+  42% {
+    color: #b8ffdd;
+  }
+
+  43% {
+    color: #b8ffe1;
+  }
+
+  44% {
+    color: #b8ffe5;
+  }
+
+  45% {
+    color: #b8ffea;
+  }
+
+  46% {
+    color: #b8ffee;
+  }
+
+  47% {
+    color: #b8fff2;
+  }
+
+  48% {
+    color: #b8fff6;
+  }
+
+  49% {
+    color: #b8fffb;
+  }
+
+  50% {
+    color: #b8ffff;
+  }
+
+  51% {
+    color: #b8fbff;
+  }
+
+  52% {
+    color: #b8f6ff;
+  }
+
+  53% {
+    color: #b8f2ff;
+  }
+
+  54% {
+    color: #b8eeff;
+  }
+
+  55% {
+    color: #b8eaff;
+  }
+
+  56% {
+    color: #b8e5ff;
+  }
+
+  57% {
+    color: #b8e1ff;
+  }
+
+  58% {
+    color: #b8ddff;
+  }
+
+  59% {
+    color: #b8d8ff;
+  }
+
+  60% {
+    color: #b8d4ff;
+  }
+
+  61% {
+    color: #b8d0ff;
+  }
+
+  62% {
+    color: #b8ccff;
+  }
+
+  63% {
+    color: #b8c7ff;
+  }
+
+  64% {
+    color: #b8c3ff;
+  }
+
+  65% {
+    color: #b8bfff;
+  }
+
+  66% {
+    color: #b8baff;
+  }
+
+  67% {
+    color: #b9b8ff;
+  }
+
+  68% {
+    color: #bdb8ff;
+  }
+
+  69% {
+    color: #c2b8ff;
+  }
+
+  70% {
+    color: #c6b8ff;
+  }
+
+  71% {
+    color: #cab8ff;
+  }
+
+  72% {
+    color: #ceb8ff;
+  }
+
+  73% {
+    color: #d3b8ff;
+  }
+
+  74% {
+    color: #d7b8ff;
+  }
+
+  75% {
+    color: #dbb8ff;
+  }
+
+  76% {
+    color: #e0b8ff;
+  }
+
+  77% {
+    color: #e4b8ff;
+  }
+
+  78% {
+    color: #e8b8ff;
+  }
+
+  79% {
+    color: #ecb8ff;
+  }
+
+  80% {
+    color: #f1b8ff;
+  }
+
+  81% {
+    color: #f5b8ff;
+  }
+
+  82% {
+    color: #f9b8ff;
+  }
+
+  83% {
+    color: #feb8ff;
+  }
+
+  84% {
+    color: #ffb8fc;
+  }
+
+  85% {
+    color: #ffb8f8;
+  }
+
+  86% {
+    color: #ffb8f4;
+  }
+
+  87% {
+    color: #ffb8ef;
+  }
+
+  88% {
+    color: #ffb8eb;
+  }
+
+  89% {
+    color: #ffb8e7;
+  }
+
+  90% {
+    color: #ffb8e2;
+  }
+
+  91% {
+    color: #ffb8de;
+  }
+
+  92% {
+    color: #ffb8da;
+  }
+
+  93% {
+    color: #ffb8d6;
+  }
+
+  94% {
+    color: #ffb8d1;
+  }
+
+  95% {
+    color: #ffb8cd;
+  }
+
+  96% {
+    color: #ffb8c9;
+  }
+
+  97% {
+    color: #ffb8c4;
+  }
+
+  98% {
+    color: #ffb8c0;
+  }
+
+  99% {
+    color: #ffb8bc;
+  }
+
+  to {
+    color: #ffb8b8;
+  }
+}
+
+.k10k {
+  animation: rainbow 20s infinite alternate;
+  display: flex;
+  font-family: var(--font-fancy);
+  font-size: 4em;
+  letter-spacing: -0.05em;
+  line-height: normal;
+  height: 0.9em;
+  margin-bottom: 2rem;
+}
+
+.flipped {
+  margin-left: -0.05em;
+  margin-right: 0.05em;
+  transform: scaleX(-1);
+}
+
+.k10k > div {
+  display: flex;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+nav {
+  margin-top: 0.2em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  font-weight: bold;
+  color: var(--color-white);
+  text-decoration: none;
+  text-transform: uppercase;
+}
